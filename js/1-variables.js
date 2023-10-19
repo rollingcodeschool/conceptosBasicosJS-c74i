@@ -37,4 +37,11 @@ console.log(color);
 color = "Rojo";
 console.log(color);
 
+let numeroSeleccionado = parseInt(prompt('Ingrese un numero entre 1 y 50'));
+console.log(numeroSeleccionado+30);
 
+// parseInt("30")
+// parseFloat("30.4")
+
+const url = 'https://universe.rollingcodeschool.com';
+console.log(url);
