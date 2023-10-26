@@ -31,6 +31,6 @@ for(inicializo una variable; condicion logica; modifico la condicion){
 */
 
 // contador-- es igual (contador = contador -1)
-for(let contador = 10; contador >= 1 ; contador-- ){
-    document.write(`Renglon numero ${contador} <br>`);
+for (let contador = 10; contador >= 1; contador--) {
+  document.write(`Renglon numero ${contador} <br>`);
 }
