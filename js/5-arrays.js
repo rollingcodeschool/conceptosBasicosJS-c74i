@@ -48,9 +48,36 @@ document.write(`</ul>`);
 //modificar elementos en el array
 peliculas[3] = 'Dr. Strange: multiverse of madness'
 console.log(peliculas)
-// document.write(`<h2>Lista de peliculas + Dr. strange modificado</h2>`);
-// document.write(`<ul>`);
-// for(let i=0; i < peliculas.length; i++){
-//     document.write(`<li>${peliculas[i]}</li>`);
-// }
-// document.write(`</ul>`);
+document.write(`<h2>Lista de peliculas + Dr. strange modificado (${peliculas.length})</h2>`);
+document.write(`<ul>`);
+for(let i=0; i < peliculas.length; i++){
+    document.write(`<li>${peliculas[i]}</li>`);
+}
+document.write(`</ul>`);
+
+//borrar elementos del array
+peliculas.shift();
+document.write(`<h2>Lista de peliculas menos el primer elemento (${peliculas.length})</h2>`);
+document.write(`<ul>`);
+for(let i=0; i < peliculas.length; i++){
+    document.write(`<li>${peliculas[i]}</li>`);
+}
+document.write(`</ul>`);
+
+// peliculas.splice(6,1);
+peliculas.splice(6,2);
+// peliculas.splice(6);
+document.write(`<h2>Lista de peliculas menos un elemento particular (${peliculas.length})</h2>`);
+document.write(`<ul>`);
+for(let i=0; i < peliculas.length; i++){
+    document.write(`<li>${peliculas[i]}</li>`);
+}
+document.write(`</ul>`);
+
+peliculas.pop();
+document.write(`<h2>Lista de peliculas menos el ultimo elemento (${peliculas.length})</h2>`);
+document.write(`<ul>`);
+for(let i=0; i < peliculas.length; i++){
+    document.write(`<li>${peliculas[i]}</li>`);
+}
+document.write(`</ul>`);
